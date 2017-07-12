@@ -122,7 +122,7 @@ mustang.drive();
 // CODE HERE...
 String.prototype.grammarPolice = function() {
   var newArr = [];
-  var arr = str.toLowerCase().split(' ');
+  var arr = this.toLowerCase().split(' ');
   
   for(var i = 0; i < arr.length; i++ ) {
     newArr.push(arr[i].charAt(0).toUpperCase()+arr[i].slice(1))
@@ -130,8 +130,6 @@ String.prototype.grammarPolice = function() {
   
   return newArr.join(' ');
 }
-
-'DAVE GUYMON'.grammarPolice()
 
 
 // *************
